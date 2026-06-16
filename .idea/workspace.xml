@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0168d4da-20ac-4b86-ae61-0ca5f5ecabcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/ex03/dto/SampleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex03/src/main/webapp/WEB-INF/views/sample/ex04.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/ex03/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/ex03/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "mangojeong-dev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mangojeong-dev/08_Spring.git",
+    "accountId": "1ddbb4b2-50b2-4e09-8be9-b675dce0bf04"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3FCmLHYiYlLoo14WG8QMaWun6ad" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0168d4da-20ac-4b86-ae61-0ca5f5ecabcf" name="Changes" comment="" />
+      <created>1781587370148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781587370148</updated>
+      <workItem from="1781587371094" duration="35000" />
+    </task>
+    <servers />
+  </component>
+</project>

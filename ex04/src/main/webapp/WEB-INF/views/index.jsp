@@ -1,12 +1,12 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<html lang="ko">
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
 </head>
 <body>
-<h1>환영합니다.</h1>
-전달된 name은 ${name}
-<%-- 속성으로 전달된 값은 EL로 프린트 가능 --%>
+<!-- EL(Expression Language)로 Model 데이터 접근 -->
+<h1>${name} 환영합니다.</h1>
 </body>
 </html>
