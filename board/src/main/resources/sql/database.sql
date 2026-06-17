@@ -1,5 +1,7 @@
-CREATE DATABASE 260617_board_test_db;
-USE 260617_board_test_db;
+# grant all privileges on 260617_test_db.* to 'jmg'@'%';
+
+CREATE DATABASE IF NOT EXISTS 260617_test_db;
+USE 260617_test_db;
 DROP TABLE IF EXISTS tbl_board;
 CREATE TABLE tbl_board
 (
