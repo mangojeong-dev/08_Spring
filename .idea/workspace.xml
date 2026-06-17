@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0168d4da-20ac-4b86-ae61-0ca5f5ecabcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/260617_first/src/main/java/org/scoula/mapper/TimeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/main/resources/org/scoula/mapper/TimeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/test/java/org/scoula/mapper/TimeMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/260617_first/src/test/java/org/scoula/persistence/JDBCTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLegacy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringLegacy/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLegacy/src/main/java/org/scoula/config/ServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringLegacy/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLegacy/src/main/java/org/scoula/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringLegacy/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/ex03/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/src/main/java/org/scoula/ex03/controller/SampleController.java" afterDir="false" />
-    </list>
+    <list default="true" id="0168d4da-20ac-4b86-ae61-0ca5f5ecabcf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781587370148</updated>
       <workItem from="1781587371094" duration="35000" />
-      <workItem from="1781663772932" duration="12000" />
+      <workItem from="1781663772932" duration="142000" />
     </task>
     <servers />
   </component>
