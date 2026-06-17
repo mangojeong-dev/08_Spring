@@ -5,6 +5,9 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 import javax.servlet.Filter;
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 /**
  * 웹 애플리케이션 부트스트래핑 설정 클래스
@@ -15,10 +18,11 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
 
 
     // 파일 업로드 설정 상수
-    final String LOCATION = "c:/upload";
-    final long MAX_FILE_SIZE = 1024 * 1024 * 10L;      // 10MB
-    final long MAX_REQUEST_SIZE = 1024 * 1024 * 20L;   // 20MB
-    final int FILE_SIZE_THRESHOLD = 1024 * 1024 * 5;   // 5MB
+    private static final String PROPERTIES_FILE = "application.properties";
+    private static final String LOCATION = getProperty("upload.location");
+    private static final long MAX_FILE_SIZE = getLongProperty("upload.max-file-size");
+    private static final long MAX_REQUEST_SIZE = getLongProperty("upload.max-request-size");
+    private static final int FILE_SIZE_THRESHOLD = getIntProperty("upload.file-size-threshold");
 
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
@@ -139,5 +143,35 @@ public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitiali
         return new Filter[] { characterEncodingFilter };
     }
 
+    private static Properties loadProperties() {
+        Properties properties = new Properties();
+
+        try (InputStream inputStream = WebConfig.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE)) {
+            if (inputStream == null) {
+                throw new IllegalStateException(PROPERTIES_FILE + " not found");
+            }
+            properties.load(inputStream);
+        } catch (IOException e) {
+            throw new IllegalStateException("Failed to load " + PROPERTIES_FILE, e);
+        }
+
+        return properties;
+    }
+
+    private static String getProperty(String key) {
+        String value = loadProperties().getProperty(key);
+        if (value == null || value.isBlank()) {
+            throw new IllegalStateException("Missing property: " + key);
+        }
+        return value;
+    }
+
+    private static long getLongProperty(String key) {
+        return Long.parseLong(getProperty(key));
+    }
+
+    private static int getIntProperty(String key) {
+        return Integer.parseInt(getProperty(key));
+    }
 
 }

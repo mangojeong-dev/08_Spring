@@ -42,7 +42,7 @@ public class BoardMapperTest {
         board.setContent("새로 작성하는 내용");
         board.setWriter("user0");
         mapper.create(board);
-        log.info(board);
+        log.info(board);ㅋ
     }
 
 
