@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <!-- camelCase ↔ snake_case 자동 변환 -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+
+    <!-- 별칭 설정으로 패키지명 단축 -->
+    <typeAliases>
+        <typeAlias alias="BoardVO" type="org.scoula.board.domain.BoardVO" />
+    </typeAliases>
+</configuration>
