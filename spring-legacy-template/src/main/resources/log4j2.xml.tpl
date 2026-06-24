@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF-8" pattern="%d{HH:mm:ss} %-5level %c{1} - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="__BASE_PACKAGE__" level="INFO" additivity="false">
+            <AppenderRef ref="console"/>
+        </Logger>
+        <Root level="INFO">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
