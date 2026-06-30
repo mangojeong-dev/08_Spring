@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.scoula.security.account.mapper.UserDetailsMapper">
+
+
+    <!-- resultType="vo" : 컬럼명과 vo변수명이 같을 때 자동으로 넣어줌.  -->
+    <!-- resultMap="mapid" : 결과가 list를 포함하고 있는 경우는 넣어줄 vo를 수동으로 정의해주어야 함.-->
+    <select id="get" resultMap="memberMap">
+        select m.username, password, email, reg_date, update_date, auth
+        from tbl_member m
+            left outer join tbl_member_auth a
+            on m.username = a.username
+        where m.username = #{username}
+    </select>
+
+    <resultMap id="authMap" type="AuthVO">
+        <!-- type은 vo를 써주고, property는 vo안의 변수명을 써줌.        -->
+        <result property="username" column="username"/>
+        <result property="auth" column="auth"/>
+    </resultMap>
+    
+    <resultMap id="memberMap" type="MemberVO">
+        <id property="username" column="username"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="email" column="email"/>
+        <result property="username" column="username"/>
+        <result property="regDate" column="reg_date"/>
+        <result property="updateDate" column="update_date"/>
+        <collection property="authList" resultMap="authMap"/>
+    </resultMap>
+
+</mapper>
